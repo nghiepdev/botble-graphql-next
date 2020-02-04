@@ -21,6 +21,7 @@
     "@babel/plugin-proposal-do-expressions": "^7.8.3",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "babel-eslint": "^10.0.3",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-ramda": "^2.0.0",
@@ -32,11 +33,18 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1"
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.1.4"
   },
   "engines": {
     "node": ">= 13.3.0"
   },
+  "browserslist": [
+    "> 0.25%",
+    "not ie 11",
+    "not op_mini all"
+  ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:botble/graphql-next.git"
