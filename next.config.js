@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 module.exports = {
-  webpack(config, {dev, isServer}) {
+  webpack(config, {dev}) {
     // Fixes npm packages that depend on `fs` module
     config.node = {
       fs: 'empty',
@@ -14,5 +16,9 @@ module.exports = {
     }
 
     return config;
+  },
+
+  env: {
+    APP_API: process.env.APP_API,
   },
 };

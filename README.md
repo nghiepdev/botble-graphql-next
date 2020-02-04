@@ -4,9 +4,13 @@
 
 ## Prerequisites
 
+- [NodeJS](https://nodejs.org)
+- [Yarnpkg](https://yarnpkg.com)
 - [Docker Compose](https://docs.docker.com/compose/install)
 
 ## Getting started
+
+_The first you need clone the `.env.example` to `.env` file and overwrite your environments._
 
 - For development
 
