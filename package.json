@@ -2,14 +2,66 @@
   "name": "botble-graphql-next",
   "version": "0.1.0",
   "private": true,
+  "description": "Botble GraphQL Next",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore --ignore-path .prettierignore",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "date-fns": "^2.9.0",
     "next": "9.2.1",
+    "ramda": "^0.27.0",
     "react": "16.12.0",
     "react-dom": "16.12.0"
-  }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-do-expressions": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-ramda": "^2.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">= 13.3.0"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:botble/graphql-next.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{less,md,css,json,html,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,ts}": [
+      "npm run lint:fix --",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "author": "Nghiep <me@nghiepit.dev>",
+  "license": "MIT"
 }
