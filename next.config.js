@@ -1,24 +1,42 @@
 require('dotenv').config();
 
-module.exports = {
-  webpack(config, {dev}) {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty',
-    };
+const {PHASE_PRODUCTION_BUILD} = require('next/constants');
+const {withPlugins, optional} = require('next-compose-plugins');
 
-    if (dev) {
-      config.module.rules.push({
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      });
-    }
+module.exports = withPlugins(
+  [
+    [
+      optional(() => require('next-purgecss')),
+      {
+        purgeCssPaths: [
+          './pages/**/*.{js,jsx}',
+          './components/**/*.{js,jsx}',
+          './layouts/**/*.{js,jsx}',
+        ],
+      },
+      [PHASE_PRODUCTION_BUILD],
+    ],
+  ],
+  {
+    webpack(config, {dev}) {
+      // Fixes npm packages that depend on `fs` module
+      config.node = {
+        fs: 'empty',
+      };
 
-    return config;
+      if (dev) {
+        config.module.rules.push({
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          loader: 'eslint-loader',
+        });
+      }
+
+      return config;
+    },
+
+    env: {
+      APP_API: process.env.APP_API,
+    },
   },
-
-  env: {
-    APP_API: process.env.APP_API,
-  },
-};
+);

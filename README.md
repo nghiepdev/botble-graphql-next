@@ -23,11 +23,20 @@ $ yarn dev
 
 _COMING SOON_
 
+## Style guides and rules
+
+- [Conventional commits](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html) to make the world nice
+- Lint with [ESLint](https://eslint.org)
+- Format with [Prettier](https://prettier.io)
+
 ## Tech stack
 
 - [Next.js](https://nextjs.org)
 - [urql](https://github.com/FormidableLabs/urql)
 - [Tailwindcss](https://tailwindcss.com)
+- [PostCSS](https://postcss.org)
+- [Iconify](https://iconify.design)
 
 ## License
 
