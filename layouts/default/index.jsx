@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HeadTop from './HeadTop';
+import TopHead from './TopHead';
 
 const Default = ({children}) => {
   return (
     <>
-      <HeadTop />
+      <TopHead />
       {children}
     </>
   );

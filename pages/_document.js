@@ -23,7 +23,7 @@ class MyDocument extends Document {
             crossOrigin="true"
           />
         </Head>
-        <body className="text-gray-900">
+        <body className="text-gray-900 text-sm antialiased">
           <Main />
           <NextScript />
           <script async src="//code.iconify.design/1/1.0.4/iconify.min.js" />
