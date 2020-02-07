@@ -1,0 +1,5 @@
+.container-fluid {
+  @media (max-width: theme('screens.lg')) {
+    @apply max-w-full !important;
+  }
+}

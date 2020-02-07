@@ -3,7 +3,7 @@ import React from 'react';
 const TopHead = () => {
   return (
     <div className="bg-gray-200">
-      <div className="container mx-auto px-2 sm:px-0">
+      <div className="container container-fluid px-2 lg:px-0">
         <div className="flex h-10 justify-between">
           <div className="flex items-center">
             <a href="/" className="text-blue-700">

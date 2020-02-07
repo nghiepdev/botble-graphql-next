@@ -3,4 +3,5 @@
 @tailwind components;
 /* purgecss end ignore */
 @import './reset.css';
+@import './customize.css';
 @tailwind utilities;
