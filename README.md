@@ -34,9 +34,12 @@ _COMING SOON_
 
 - [Next.js](https://nextjs.org)
 - [urql](https://github.com/FormidableLabs/urql)
+- [React Hooks](https://github.com/streamich/react-use)
+- [Ramda.js](https://ramdajs.com)
 - [Tailwindcss](https://tailwindcss.com)
 - [PostCSS](https://postcss.org)
 - [Iconify](https://iconify.design)
+- [date-fns](https://date-fns.org) FP only
 
 ## License
 
