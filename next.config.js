@@ -16,6 +16,15 @@ module.exports = withPlugins(
       },
       [PHASE_PRODUCTION_BUILD],
     ],
+    [
+      optional(() =>
+        require('@next/bundle-analyzer')({
+          enabled: process.env.ANALYZE === 'true',
+        }),
+      ),
+      {},
+      [PHASE_PRODUCTION_BUILD],
+    ],
   ],
   {
     webpack(config, {dev}) {
