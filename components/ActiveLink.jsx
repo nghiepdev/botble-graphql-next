@@ -14,7 +14,7 @@ const ActiveLink = ({children, activeClassName, exact, ...props}) => {
     const className = clsx(childClassName, activeClassName);
 
     if (exact && props.as) {
-      if (contains(asPath, props.as) || contains(props.as, asPath)) {
+      if (contains(props.as, asPath.replace(/[\?#].*/, ''))) {
         return className;
       }
       return childClassName;
@@ -38,7 +38,7 @@ ActiveLink.propTypes = {
 };
 
 ActiveLink.defaultProps = {
-  activeClassName: 'active',
+  activeClassName: 'active text-blue-600',
 };
 
 export default ActiveLink;
