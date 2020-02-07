@@ -2,4 +2,5 @@
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
+@import './reset.css';
 @tailwind utilities;

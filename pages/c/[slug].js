@@ -3,15 +3,13 @@ import React from 'react';
 import Layout from 'layouts/default';
 import Head from 'components/Head';
 
-const Home = () => {
+const Category = () => {
   return (
     <Layout>
       <Head />
-      <div className="bg-gray-200">
-        <span className="iconify" data-icon="noto:bird"></span>
-      </div>
+      <div>content</div>
     </Layout>
   );
 };
 
-export default Home;
+export default Category;
