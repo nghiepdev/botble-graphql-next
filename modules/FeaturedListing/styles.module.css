@@ -1,0 +1,7 @@
+/* purgecss start ignore */
+
+.gridLayout {
+  @apply grid;
+}
+
+/* purgecss end ignore */

@@ -34,6 +34,7 @@
     "@babel/plugin-proposal-do-expressions": "^7.8.3",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "@iconify/icons-fa-solid": "^1.0.7",
     "@iconify/icons-icomoon-free": "^1.0.3",
     "@iconify/icons-ion": "^1.0.10",
@@ -55,7 +56,6 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
-    "next-purgecss": "^3.1.2",
     "postcss-nested": "^4.2.1",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"

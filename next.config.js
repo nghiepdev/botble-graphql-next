@@ -6,17 +6,6 @@ const {withPlugins, optional} = require('next-compose-plugins');
 module.exports = withPlugins(
   [
     [
-      optional(() => require('next-purgecss')),
-      {
-        purgeCssPaths: [
-          './pages/**/*.{js,jsx}',
-          './components/**/*.{js,jsx}',
-          './layouts/**/*.{js,jsx}',
-        ],
-      },
-      [PHASE_PRODUCTION_BUILD],
-    ],
-    [
       optional(() =>
         require('@next/bundle-analyzer')({
           enabled: process.env.ANALYZE === 'true',

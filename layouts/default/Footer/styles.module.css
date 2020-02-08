@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 .footer {
   @apply relative text-white;
   &:before,
@@ -22,3 +24,5 @@
     }
   }
 }
+
+/* purgecss end ignore */
