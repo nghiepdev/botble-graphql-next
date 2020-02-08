@@ -1054,6 +1054,33 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@iconify/icons-ion@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-ion/-/icons-ion-1.0.10.tgz#34eba03b4a17875407836b594a68890646306bf6"
+  integrity sha512-z58rj8HWGWKb5VvI/rOJXsH2gNiMI065eYnzulL4sv+dpoHnmSHN/0XofyD0x8a6h97KxZQi4v3nJIa2PIEA6Q==
+
+"@iconify/icons-mdi@^1.0.65":
+  version "1.0.65"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-mdi/-/icons-mdi-1.0.65.tgz#33790f803a3e89be3e3a3c282ae864ca1c6b2518"
+  integrity sha512-A18eRy8+5a6Zu1LkElJPMZHArukaeehtma6fGnOLV1tuHzTiPYk+KnWeYLV4b2TZ9CCirxoYwnfnEtALi53wkQ==
+
+"@iconify/icons-simple-line-icons@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-simple-line-icons/-/icons-simple-line-icons-1.0.1.tgz#5d001c7592394c4c2681675194888cc46d01ca4a"
+  integrity sha512-VmySIHoMS+I2uira8bUrBODRCqK1PLqIyNzb1lnd0X5xXnKWLv5Rq/7Sp00fSglLD/CaJPZX35s6AqAoN2jITg==
+
+"@iconify/icons-vaadin@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-vaadin/-/icons-vaadin-1.0.3.tgz#a1d654e3d818a7ad9aa753403d3d9e975ac07117"
+  integrity sha512-LYq7Y78nxi0UBYgxFkt4zjkZ+rlDCsdk+Q6eQB9V+XCQUddlO7Pa20gG1+eEwZYuaMqwH1RgbUWIytGplyXl5Q==
+
+"@iconify/react@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.1.tgz#38526508f722e0b617723d79209bb1e6d8c59c61"
+  integrity sha512-BRbPW/vkyWi6n2dHx4O8Cp0RKeI4KsxieLZ+UcyknCkk1IVxii5IassCIKHJ3jWB6s6uLAWq5EnHJniI7er9+w==
+  dependencies:
+    react "^16.8.3"
+
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@marionebl/sander/-/sander-0.6.1.tgz#1958965874f24bc51be48875feb50d642fc41f7b"
@@ -6642,7 +6669,7 @@ react-wonka@^2.0.1:
   resolved "https://registry.yarnpkg.com/react-wonka/-/react-wonka-2.0.1.tgz#75bdf03dbad8ceb8c1066216f635f05ce2b642a5"
   integrity sha512-mM2UH2gnK5LLzaqVWd6JCLrB1vO3I4PN/sQZbjvzsjms4vSv+nKwelNUftM0KeC+LtTPC4GGsuxyu2XJnsCUTw==
 
-react@16.12.0:
+react@16.12.0, react@^16.8.3:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==

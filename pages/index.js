@@ -7,9 +7,7 @@ const Home = () => {
   return (
     <Layout>
       <Head />
-      <div className="bg-gray-200">
-        <span className="iconify" data-icon="noto:bird"></span>
-      </div>
+      <div className="bg-gray-200">home</div>
     </Layout>
   );
 };

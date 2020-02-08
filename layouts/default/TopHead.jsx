@@ -1,4 +1,9 @@
 import React from 'react';
+import {Icon} from '@iconify/react';
+import facebookIcon from '@iconify/icons-mdi/facebook';
+import twitterIcon from '@iconify/icons-mdi/twitter';
+import githubIcon from '@iconify/icons-mdi/github';
+import loginIcon from '@iconify/icons-mdi/login';
 
 const TopHead = () => {
   return (
@@ -7,27 +12,22 @@ const TopHead = () => {
         <div className="flex h-10 justify-between">
           <div className="flex items-center">
             <a href="/" className="text-blue-700">
-              <span
-                className="iconify text-2xl"
-                data-icon="mdi:facebook"></span>
+              <Icon icon={facebookIcon} className="text-2xl" />
             </a>
             <a href="/" className="inline-block ml-3 text-blue-600">
-              <span className="iconify text-2xl" data-icon="mdi:twitter"></span>
+              <Icon icon={twitterIcon} className="text-2xl" />
             </a>
             <a
               href="https://github.com/nghiepit"
               className="inline-block ml-3"
               target="_blank"
               rel="noopener noreferrer">
-              <span className="iconify text-2xl" data-icon="mdi:github"></span>
+              <Icon icon={githubIcon} className="text-2xl" />
             </a>
           </div>
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span
-                className="iconify"
-                data-icon="mdi:login"
-                data-height="16"></span>
+              <Icon icon={loginIcon} height="16" />
               <span className="inline-block ml-1">Đăng nhập</span>
             </a>
           </div>

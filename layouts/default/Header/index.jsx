@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import clsx from 'clsx';
 import {useToggle, useMedia} from 'react-use';
+import {Icon} from '@iconify/react';
+import iconSearchIcon from '@iconify/icons-ion/search';
+import closeBig from '@iconify/icons-vaadin/close-big';
+import menuIcon from '@iconify/icons-simple-line-icons/menu';
 
 import Navigation from './Navigation';
 
@@ -23,31 +26,15 @@ const Header = () => {
           <div className="flex items-center">
             {!isMobile && <Navigation />}
             <div className="flex ml-10 items-center">
-              <span
-                className="iconify font-bold"
-                data-icon="ion:search"
-                data-height="18"></span>
+              <Icon icon={iconSearchIcon} className="font-bold" height="18" />
               {isMobile && (
-                <span className="cursor-pointer ml-2" onClick={toggleOpen}>
-                  <span
-                    className={clsx('block -mr-2', {
-                      hidden: !toggle,
-                    })}>
-                    <span
-                      className="iconify font-semibold"
-                      data-icon="ion:close-outline"
-                      data-height="26"></span>
-                  </span>
-                  <span
-                    className={clsx({
-                      hidden: toggle,
-                    })}>
-                    <span
-                      className="iconify font-bold"
-                      data-icon="simple-line-icons:menu"
-                      data-height="17"></span>
-                  </span>
-                </span>
+                <Icon
+                  icon={toggle ? closeBig : menuIcon}
+                  className="cursor-pointer ml-2 font-bold"
+                  width="18"
+                  height="16"
+                  onClick={toggleOpen}
+                />
               )}
             </div>
           </div>
