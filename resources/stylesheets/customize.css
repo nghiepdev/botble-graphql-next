@@ -3,3 +3,14 @@
     @apply max-w-full !important;
   }
 }
+
+.underline-title {
+  @apply uppercase font-semibold mb-2;
+
+  &:after {
+    @apply block mt-1 bg-fresh-red;
+    content: '';
+    width: 25px;
+    height: 2px;
+  }
+}

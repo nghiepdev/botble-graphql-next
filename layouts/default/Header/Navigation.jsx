@@ -61,7 +61,7 @@ const Navigation = ({wide}) => {
         </li>
         <li
           className={clsx({
-            'p-3 border-b border-gray-500 border-dashed': wide,
+            'p-3 border-b border-gray-400 border-solid': wide,
             'ml-6': !wide,
           })}>
           <ActiveLink href="/c/[slug]" as="/c/xa-hoi" exact>

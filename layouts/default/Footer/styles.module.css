@@ -1,0 +1,24 @@
+.footer {
+  @apply relative text-white;
+  &:before,
+  &:after {
+    @apply absolute inset-0 -z-1;
+    content: '';
+  }
+  &:before {
+    @apply bg-cover;
+    content: '';
+    background: url('/images/footer_bg.png') no-repeat center;
+  }
+  &:after {
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.group_link {
+  ul {
+    li {
+      @apply py-2;
+    }
+  }
+}

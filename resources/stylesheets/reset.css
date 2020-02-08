@@ -3,3 +3,7 @@ a {
     @apply underline;
   }
 }
+
+svg {
+  @apply inline-block !important;
+}

@@ -1054,6 +1054,16 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@iconify/icons-fa-solid@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-fa-solid/-/icons-fa-solid-1.0.7.tgz#a06017e94d00cc69df3eb45bd4dfff0da5f55690"
+  integrity sha512-QEPbXURs9tC4rGouEe2u0RViiB4I6c3T5Bmcl4AHUsvG4EaxZIoJSV/U+8QewwM6TFZEvYlwNIPj2QX5xzbJcQ==
+
+"@iconify/icons-icomoon-free@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-icomoon-free/-/icons-icomoon-free-1.0.3.tgz#bd885b962b070b8fac1edddfca6fc1f69ca0a3ed"
+  integrity sha512-oXGXpxRKQH1eh259eBc0WGTDbat/LBRORk+7BNdlSvjsy329nZkr58pZ/A8cXxPQvvDfBafZYPNipT0URkqBsQ==
+
 "@iconify/icons-ion@^1.0.10":
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/@iconify/icons-ion/-/icons-ion-1.0.10.tgz#34eba03b4a17875407836b594a68890646306bf6"

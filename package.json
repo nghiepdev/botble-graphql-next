@@ -34,6 +34,8 @@
     "@babel/plugin-proposal-do-expressions": "^7.8.3",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@iconify/icons-fa-solid": "^1.0.7",
+    "@iconify/icons-icomoon-free": "^1.0.3",
     "@iconify/icons-ion": "^1.0.10",
     "@iconify/icons-mdi": "^1.0.65",
     "@iconify/icons-simple-line-icons": "^1.0.1",
