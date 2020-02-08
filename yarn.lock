@@ -1062,6 +1062,11 @@
     postcss "7.0.26"
     purgecss "^2.0.6"
 
+"@iconify/icons-cil@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-cil/-/icons-cil-1.0.0.tgz#69acbad87763587cab2c2c923a1f790d3fbd3e6f"
+  integrity sha512-E2WFfPmt/kuIFfUBSUQjRYCjYTAbEG/x0TbgT+Vcl1X6C56sgekGdrbSs+Xh9Ygkb14dSbGbDtcmB+Vc+R7HsQ==
+
 "@iconify/icons-fa-solid@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@iconify/icons-fa-solid/-/icons-fa-solid-1.0.7.tgz#a06017e94d00cc69df3eb45bd4dfff0da5f55690"

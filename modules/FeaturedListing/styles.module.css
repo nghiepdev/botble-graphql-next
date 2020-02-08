@@ -1,7 +1,25 @@
 /* purgecss start ignore */
 
-.gridLayout {
-  @apply grid;
+.grid_layout {
+  @apply grid gap-2;
+  grid-auto-rows: 260px;
+
+  @screen sm {
+    @apply grid-cols-2;
+    grid-auto-rows: 160px;
+    :global(.first) {
+      @apply row-span-2 col-span-2;
+    }
+  }
+
+  @screen md {
+    @apply grid-cols-4;
+    grid-auto-rows: 180px;
+  }
+
+  @screen md {
+    grid-auto-rows: 185px;
+  }
 }
 
 /* purgecss end ignore */
