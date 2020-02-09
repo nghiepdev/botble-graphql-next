@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import Head from 'next/head';
 import PropTypes from 'prop-types';
 import GLightbox from 'glightbox';
 
@@ -22,6 +23,12 @@ const LightboxSlider = ({images}) => {
 
   return (
     <div className="grid gap-4 mt-5">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="//unpkg.com/glightbox@2.0.5/dist/css/glightbox.min.css"
+        />
+      </Head>
       {images.map(({medium, full}, index) => (
         <a
           key={index}

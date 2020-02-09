@@ -4,8 +4,12 @@
 @tailwind components;
 @import './reset.css';
 @import './customize.css';
-@import '~tiny-slider/dist/tiny-slider.css';
-@import '~glightbox/dist/css/glightbox.css';
+
+/**
+* Currenly the purgess plugin does not propery, so don't uncomment here
+* @import '~tiny-slider/dist/tiny-slider.css';
+* @import '~glightbox/dist/css/glightbox.css';
+**/
 
 /*! purgecss end ignore */
 @tailwind utilities;

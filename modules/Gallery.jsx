@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import gql from 'graphql-tag';
 import {useQuery} from 'urql';
@@ -59,6 +60,12 @@ const Gallery = () => {
 
   return (
     <div ref={sliderRef}>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="//unpkg.com/tiny-slider@2.9.2/dist/tiny-slider.css"
+        />
+      </Head>
       {data.galleryListing.map(({id, name, slug, image}) => (
         <Link key={id} href="/g/[slug]" as={`/g/${slug}`}>
           <a className="relative text-white">
