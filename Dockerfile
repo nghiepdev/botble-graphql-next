@@ -4,8 +4,10 @@ FROM node:latest as builder
 WORKDIR /usr/src/app
 
 ARG APP_API
+ARG APP_API_SERVER
 
 ENV APP_API $APP_API
+ENV APP_API_SERVER $APP_API_SERVER
 
 COPY package.json yarn.lock ./
 

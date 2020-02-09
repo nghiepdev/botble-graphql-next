@@ -10,7 +10,7 @@ function MyApp({Component, pageProps}) {
 
 export default withUrqlClient(
   {
-    url: process.env.APP_API,
+    url: process.browser ? process.env.APP_API : process.env.APP_API_SERVER,
   },
   ssrEx =>
     [

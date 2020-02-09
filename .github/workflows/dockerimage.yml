@@ -24,10 +24,11 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         env:
           APP_API: ${{secrets.APP_API}}
+          APP_API_SERVER: ${{secrets.APP_API_SERVER}}
 
         with:
           name: nghiepit/botble-graphql-next
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tag_names: true
-          buildargs: APP_VERSION,APP_API
+          buildargs: APP_VERSION,APP_API,APP_API_SERVER
