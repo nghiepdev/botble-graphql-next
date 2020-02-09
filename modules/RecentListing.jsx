@@ -41,7 +41,7 @@ const RecentListing = () => {
       <ul className="p-3 pb-0">
         {data.recentListing.map(post => (
           <li key={post.id} className="mb-4">
-            <Link href="/n/[slug]" as={`/n/${post.slug}`}>
+            <Link href="/p/[slug]" as={`/p/${post.slug}`}>
               <a className="flex hover:no-underline hover:text-fresh-red transition duration-300">
                 <img
                   src={post.image}

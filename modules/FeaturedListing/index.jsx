@@ -48,8 +48,8 @@ const FeaturedListing = () => {
         <ImageCard
           key={post.id}
           title={post.name}
-          href="/n/[slug]"
-          as={`/n/${post.slug}`}
+          href="/p/[slug]"
+          as={`/p/${post.slug}`}
           image={post.image}
           category={
             index === 0 && post.categories[0]

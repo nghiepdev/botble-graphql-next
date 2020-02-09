@@ -14,7 +14,7 @@ const VerticalPost = ({
   more,
 }) => {
   return (
-    <Link href="/n/[slug]" as={`/n/${slug}`}>
+    <Link href="/p/[slug]" as={`/p/${slug}`}>
       <a className={clsx(className, 'hover:no-underline')}>
         <img
           src={image}

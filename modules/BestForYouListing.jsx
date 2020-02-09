@@ -61,7 +61,7 @@ const BestForYouListing = () => {
               className="row-span-6 mb-3 pb-3 sm:mb-0 sm:pb-0 border-b sm:border-0"
             />
           ) : (
-            <Link key={post.id} href="/n/[slug]" as={`/n/${post.slug}`}>
+            <Link key={post.id} href="/p/[slug]" as={`/p/${post.slug}`}>
               <a className="flex hover:no-underline transition duration-300">
                 <img
                   src={post.image}
