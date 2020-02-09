@@ -1,6 +1,7 @@
 import React from 'react';
+import {useRouter} from 'next/router';
 import Link from 'next/link';
-import {useToggle, useMedia} from 'react-use';
+import {useToggle, useMedia, useUpdateEffect} from 'react-use';
 import {Icon} from '@iconify/react';
 import iconSearchIcon from '@iconify/icons-ion/search';
 import closeBig from '@iconify/icons-vaadin/close-big';
@@ -9,8 +10,16 @@ import menuIcon from '@iconify/icons-simple-line-icons/menu';
 import Navigation from './Navigation';
 
 const Header = () => {
+  const router = useRouter();
+
   const [toggle, toggleOpen] = useToggle(false);
   const isMobile = useMedia('(max-width: 700px)');
+
+  useUpdateEffect(() => {
+    if (isMobile) {
+      toggleOpen(false);
+    }
+  }, [isMobile, router.asPath]);
 
   return (
     <header>
