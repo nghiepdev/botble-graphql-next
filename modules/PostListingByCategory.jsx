@@ -45,6 +45,15 @@ const PostListingByCategory = ({id}) => {
     );
   }
 
+  if (!data.postsByCategoryId.length) {
+    return (
+      <Alert
+        title="Thông báo"
+        content="Chưa có tin tức nào trong danh mục này"
+      />
+    );
+  }
+
   return (
     <section>
       {data.postsByCategoryId.map((post, index) => (
