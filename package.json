@@ -1,6 +1,6 @@
 {
   "name": "botble-graphql-next",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "description": "The migration for Botble from CMS(Laravel) to GraphQL + Next.js",
   "homepage": "https://graphql-next.toiyeulaptrinh.com",
@@ -13,7 +13,6 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "@iconify/react": "^1.1.1",
     "@iconify/icons-cil": "^1.0.0",
     "@iconify/icons-fa-solid": "^1.0.7",
     "@iconify/icons-icomoon-free": "^1.0.3",
@@ -21,6 +20,7 @@
     "@iconify/icons-mdi": "^1.0.65",
     "@iconify/icons-simple-line-icons": "^1.0.1",
     "@iconify/icons-vaadin": "^1.0.3",
+    "@iconify/react": "^1.1.1",
     "clsx": "^1.1.0",
     "date-fns": "^2.9.0",
     "dotenv": "^8.2.0",
