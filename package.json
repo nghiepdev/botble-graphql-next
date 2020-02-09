@@ -15,6 +15,7 @@
     "clsx": "^1.1.0",
     "date-fns": "^2.9.0",
     "dotenv": "^8.2.0",
+    "glightbox": "^2.0.5",
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
     "isomorphic-unfetch": "^3.0.0",

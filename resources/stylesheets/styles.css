@@ -1,8 +1,11 @@
-/* purgecss start ignore */
+/*! purgecss start ignore */
+
 @tailwind base;
 @tailwind components;
 @import './reset.css';
 @import './customize.css';
 @import '~tiny-slider/dist/tiny-slider.css';
-/* purgecss end ignore */
+@import '~glightbox/dist/css/glightbox.css';
+
+/*! purgecss end ignore */
 @tailwind utilities;

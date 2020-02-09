@@ -1,0 +1,23 @@
+/* purgecss start ignore */
+
+.banner_intro {
+  &:before,
+  &:after {
+    @apply absolute inset-0 -z-1;
+    content: '';
+  }
+  &:before {
+    background: url('/images/page_intro_1.jpg') no-repeat center top;
+    background-size: cover;
+  }
+  &:after {
+    background: rgba(23, 23, 72, 0.7);
+  }
+  &:global(.intro2) {
+    &:before {
+      background-image: url('/images/page_intro_2.jpg');
+    }
+  }
+}
+
+/* purgecss end ignore */

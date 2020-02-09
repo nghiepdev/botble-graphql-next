@@ -3816,6 +3816,11 @@ git-raw-commits@^2.0.0:
     split2 "^2.0.0"
     through2 "^3.0.0"
 
+glightbox@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/glightbox/-/glightbox-2.0.5.tgz#4ea0b2c74c05e99ca95bd69e9114b7b24a267f91"
+  integrity sha512-kKyq86yXXhs2YuVqavfqa+jt228D3iHbykaA5/H20KIifDIYVSGMt/k6Knuiw6JWNlAXCqJCqQi6sqmXj2KjJQ==
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
