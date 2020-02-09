@@ -1,16 +1,22 @@
 # BOTBLE-GRAPHQL-NEXT
 
-> Botble GraphQL Next
+[![](https://img.shields.io/docker/pulls/nghiepit/botble-graphql-next?label=botble-graphql-next&style=flat-square)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
+[![](https://images.microbadger.com/badges/version/nghiepit/botble-graphql-next.svg)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
+
+> https://graphql-next.toiyeulaptrinh.com
+>
+> The migration for Botble from CMS(Laravel) to GraphQL + Next.js
 
 ## Prerequisites
 
 - [NodeJS](https://nodejs.org)
 - [Yarnpkg](https://yarnpkg.com)
-- [Docker Compose](https://docs.docker.com/compose/install)
+- [Docker](https://docker.com)
 
 ## Getting started
 
 _The first you need clone the `.env.example` to `.env` file and overwrite your environments._
+_Check the APIs document https://github.com/nghiepit/botble-graphql_
 
 - For development
 
@@ -19,9 +25,17 @@ $ yarn install
 $ yarn dev
 ```
 
-## Build setup
+## Build Docker image
 
-_COMING SOON_
+```bash
+$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next:0.0.1 .
+```
+
+## Deploy Docker
+
+```bash
+$ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-next:0.0.1
+```
 
 ## Style guides and rules
 

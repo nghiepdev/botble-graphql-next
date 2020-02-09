@@ -3,6 +3,10 @@ FROM node:latest as builder
 
 WORKDIR /usr/src/app
 
+ARG APP_API
+
+ENV APP_API $APP_API
+
 COPY package.json yarn.lock ./
 
 RUN yarn install
@@ -28,5 +32,7 @@ COPY ./public ./public
 
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY --from=builder /usr/src/app/.next ./.next
+
+EXPOSE 3000
 
 ENTRYPOINT yarn start
