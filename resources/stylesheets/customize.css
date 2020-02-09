@@ -13,4 +13,40 @@
     width: 25px;
     height: 2px;
   }
+
+  &.underline-title-xl {
+    &:after {
+      @apply w-16;
+    }
+  }
+}
+
+.ellipsis {
+  @supports (-webkit-line-clamp: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    &.line-3 {
+      -webkit-line-clamp: 3;
+    }
+
+    &.line-4 {
+      -webkit-line-clamp: 4;
+    }
+
+    &.line-5 {
+      -webkit-line-clamp: 5;
+    }
+  }
+
+  @supports not (-webkit-line-clamp: 2) {
+    .fallback-single {
+      white-space: nowrap;
+      max-width: 100%;
+    }
+  }
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
