@@ -3,5 +3,6 @@
 @tailwind components;
 @import './reset.css';
 @import './customize.css';
+@import '~tiny-slider/dist/tiny-slider.css';
 /* purgecss end ignore */
 @tailwind utilities;

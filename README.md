@@ -27,8 +27,8 @@ _COMING SOON_
 
 - [Conventional commits](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html) to make the world nice
-- Lint with [ESLint](https://eslint.org)
-- Format with [Prettier](https://prettier.io)
+- [ESLint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
 ## Tech stack
 
@@ -40,6 +40,7 @@ _COMING SOON_
 - [PostCSS](https://postcss.org)
 - [Iconify](https://iconify.design)
 - [date-fns](https://date-fns.org) FP only
+- [tiny-slider](https://github.com/ganlanyuan/tiny-slider)
 
 ## License
 

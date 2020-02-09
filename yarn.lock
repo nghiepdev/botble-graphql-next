@@ -7800,6 +7800,11 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-slider@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/tiny-slider/-/tiny-slider-2.9.2.tgz#dcd70ac79054a4d170bc2cfde3efbdaa2cc0c75f"
+  integrity sha512-2sgEJpVbpIbbgiYM/xGa0HMvvtUZSJvXeZJmLWBux6VgFqh/MQG8LXBR59ZLYpa/1OtwM0E6/ic55oLOJN9Mnw==
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
