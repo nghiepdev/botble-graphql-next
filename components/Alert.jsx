@@ -13,6 +13,7 @@ const Alert = ({title, content, color, className}) => {
       role="alert">
       <p className="font-bold">{title}</p>
       <p>{content}</p>
+      <span className="hidden bg-orange-100 border-orange-500 text-orange-700 bg-red-100 border-red-500 text-red-700 bg-blue-100 border-blue-500 text-blue-700 bg-green-100 border-green-500 text-green-700" />
     </div>
   );
 };
@@ -20,7 +21,7 @@ const Alert = ({title, content, color, className}) => {
 Alert.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
-  color: PropTypes.string,
+  color: PropTypes.oneOf(['orange', 'red', 'blue', 'green']),
 };
 
 Alert.defaultProps = {

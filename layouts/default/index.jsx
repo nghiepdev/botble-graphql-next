@@ -9,7 +9,7 @@ const Default = ({children}) => {
     <div className="flex flex-col min-h-screen">
       <TopHead />
       <Header />
-      <main>{children}</main>
+      <main className="overflow-x-hidden">{children}</main>
       <Footer />
     </div>
   );

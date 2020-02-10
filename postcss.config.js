@@ -1,6 +1,14 @@
 module.exports = {
   plugins: [
     'tailwindcss',
+    'postcss-nested',
+    [
+      'postcss-preset-env',
+      {
+        stage: 2,
+        features: {},
+      },
+    ],
     process.env.NODE_ENV === 'production'
       ? [
           '@fullhuman/postcss-purgecss',
@@ -15,13 +23,5 @@ module.exports = {
           },
         ]
       : undefined,
-    'postcss-nested',
-    [
-      'postcss-preset-env',
-      {
-        stage: 2,
-        features: {},
-      },
-    ],
   ].filter(Boolean),
 };
