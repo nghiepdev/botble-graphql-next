@@ -25,13 +25,14 @@ jobs:
         env:
           APP_API: ${{secrets.APP_API}}
           APP_API_SERVER: ${{secrets.APP_API_SERVER}}
+          APP_GOOGLE_TAG_KEY: ${{secrets.APP_GOOGLE_TAG_KEY}}
 
         with:
           name: nghiepit/botble-graphql-next
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: 'latest,${{ env.APP_VERSION }}'
-          buildargs: APP_VERSION,APP_API,APP_API_SERVER
+          buildargs: APP_VERSION,APP_API,APP_API_SERVER,APP_GOOGLE_TAG_KEY
 
       - name: Refresh Docker badge
         run: wget --method=POST https://hooks.microbadger.com/images/nghiepit/botble-graphql-next/333PqE5jtrjln74cim8jXiLJcB8= -O /dev/null || exit 0
