@@ -37,6 +37,11 @@ module.exports = withPlugins(
       APP_VERSION: process.env.APP_VERSION || 'dev',
       APP_API: process.env.APP_API,
       APP_API_SERVER: process.env.APP_API_SERVER,
+
+      APP_GOOGLE_TAG_KEY:
+        process.env.NODE_ENV === 'production'
+          ? process.env.APP_GOOGLE_TAG_KEY
+          : undefined,
     },
   },
 );
