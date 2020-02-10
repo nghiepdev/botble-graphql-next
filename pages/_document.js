@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang="vi">
         <Head>
-          {/* <meta name="version" content={1.0.0} /> */}
+          <meta name="version" content={process.env.APP_VERSION} />
           <meta
             name="viewport"
             content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"

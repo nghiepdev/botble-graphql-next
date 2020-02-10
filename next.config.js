@@ -34,6 +34,7 @@ module.exports = withPlugins(
     },
 
     env: {
+      APP_VERSION: process.env.APP_VERSION || 'dev',
       APP_API: process.env.APP_API,
       APP_API_SERVER: process.env.APP_API_SERVER,
     },
