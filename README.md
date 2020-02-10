@@ -5,7 +5,7 @@
 
 > https://graphql-next.toiyeulaptrinh.com
 >
-> The migration for Botble from CMS(Laravel) to GraphQL + Next.js
+> The migration for [Botble](https://botble.toiyeulaptrinh.com) from CMS(Laravel) to GraphQL + Next.js
 
 ## Prerequisites
 
