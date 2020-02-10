@@ -1,6 +1,6 @@
 {
   "name": "botble-graphql-next",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "description": "The migration for Botble from CMS(Laravel) to GraphQL + Next.js",
   "homepage": "https://graphql-next.toiyeulaptrinh.com",
