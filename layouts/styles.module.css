@@ -20,4 +20,12 @@
   }
 }
 
+.breadcrumb {
+  @media (max-width: 430px) {
+    & div:last-child {
+      @apply hidden;
+    }
+  }
+}
+
 /* purgecss end ignore */
