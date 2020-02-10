@@ -18,14 +18,18 @@ const Banner = ({children, title, breadcrumb, intro2}) => {
           },
         )}>
         <article className="h-full flex flex-col justify-center items-center">
-          <h1 className="font-bold text-lg sm:text-3xl">{title}</h1>
+          <h1 className="text-center font-bold text-lg sm:text-3xl">{title}</h1>
           {breadcrumb && (
-            <div className="flex flex-wrap justify-center mt-2">
+            <div
+              className={clsx(
+                styles.breadcrumb,
+                'flex flex-wrap justify-center mt-2',
+              )}>
               <Link href="/">
                 <a className="flex-shrink-0">Trang chủ</a>
               </Link>
               {breadcrumb.map(({title, href, as}, index) => (
-                <div key={index} className="flex-shrink-0">
+                <div key={index}>
                   <span className="px-2">&#47;</span>
                   {href ? (
                     <Link href={href} as={as}>
