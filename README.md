@@ -16,9 +16,10 @@
 ## Getting started
 
 _The first you need clone the `.env.example` to `.env` file and overwrite your environments._
+
 _Check the APIs document https://github.com/nghiepit/botble-graphql_
 
-- For development
+_Only for development environnement_
 
 ```bash
 $ yarn install

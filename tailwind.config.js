@@ -3,7 +3,6 @@ module.exports = {
     container: {
       center: true,
     },
-
     extend: {
       colors: {
         'fresh-red': '#ff2b4a',
