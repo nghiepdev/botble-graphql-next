@@ -22,8 +22,8 @@ Head.propTypes = {
 Head.defaultProps = {
   title: 'GraphQL Next with love Botble',
   description:
-    'Built with GraphQL + Next.js. Botble CMS based on Laravel Framework',
-  thumb: 'https://drive.google.com/uc?id=1FROB08kEk5LyVZlBorEt3zsFOIDykRjD',
+    "Built with GraphQL + Next.js based on Botble CMS. We're creating the best platform to kick start your project",
+  thumb: 'https://drive.google.com/uc?id=1s5CJR6QOplacHnGlmFq3ks7Mc4-4c6Yr',
 };
 
 export default Head;
