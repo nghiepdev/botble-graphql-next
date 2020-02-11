@@ -1,8 +1,12 @@
 {
   "name": "botble-graphql-next",
   "version": "0.0.4",
-  "private": true,
   "description": "The migration for Botble from CMS(Laravel) to GraphQL + Next.js",
+  "keywords": [
+    "graphql",
+    "nextjs",
+    "urql"
+  ],
   "homepage": "https://graphql-next.toiyeulaptrinh.com",
   "scripts": {
     "dev": "next dev",
@@ -83,11 +87,11 @@
     }
   },
   "lint-staged": {
-    "*.{less,md,css,json,html,yml}": [
+    "*.{css,md,json,html,yml}": [
       "prettier --write",
       "git add"
     ],
-    "*.{js,ts}": [
+    "*.{js,jsx}": [
       "npm run lint:fix --",
       "git add"
     ]
