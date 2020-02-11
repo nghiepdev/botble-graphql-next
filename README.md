@@ -29,13 +29,13 @@ $ yarn dev
 ## Build Docker image
 
 ```bash
-$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next:0.0.1 .
+$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next .
 ```
 
 ## Deploy Docker
 
 ```bash
-$ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-next:0.0.1
+$ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-next
 ```
 
 ## Style guides and rules
@@ -60,4 +60,4 @@ $ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-ne
 
 ## License
 
-[Nghiep] <me@nghiepit.dev>
+MIT © [Nghiep](https://nghiepit.dev)
