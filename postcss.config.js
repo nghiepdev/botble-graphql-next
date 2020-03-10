@@ -14,6 +14,7 @@ module.exports = {
           '@fullhuman/postcss-purgecss',
           {
             content: [
+              './tailwind.html',
               './pages/**/*.{js,jsx}',
               './components/**/*.{js,jsx}',
               './layouts/**/*.{js,jsx}',
