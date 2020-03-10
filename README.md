@@ -3,11 +3,11 @@
 [![](https://img.shields.io/docker/pulls/nghiepit/botble-graphql-next?label=botble-graphql-next&style=flat-square)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
 [![](https://images.microbadger.com/badges/version/nghiepit/botble-graphql-next.svg)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
 
+> The migration for Botble from CMS(Laravel) to GraphQL + Next.js
+>
 > https://graphql-next.toiyeulaptrinh.com
 >
-> Video demo: https://drive.google.com/file/d/10bRf-w4iHHXv9bDW_75g0ZuQNtQdaapw/view?usp=sharing
->
-> The migration for [Botble](https://botble.toiyeulaptrinh.com) from CMS(Laravel) to GraphQL + Next.js
+> [![Video demo](screenshot.png)](https://drive.google.com/file/d/10bRf-w4iHHXv9bDW_75g0ZuQNtQdaapw/view?usp=sharing)
 
 ## Prerequisites
 
