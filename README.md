@@ -5,6 +5,8 @@
 
 > https://graphql-next.toiyeulaptrinh.com
 >
+> Video demo: https://drive.google.com/file/d/10bRf-w4iHHXv9bDW_75g0ZuQNtQdaapw/view?usp=sharing
+>
 > The migration for [Botble](https://botble.toiyeulaptrinh.com) from CMS(Laravel) to GraphQL + Next.js
 
 ## Prerequisites
@@ -29,7 +31,7 @@ $ yarn dev
 ## Build Docker image
 
 ```bash
-$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next .
+$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next:0.0.1 .
 ```
 
 ## Deploy Docker
