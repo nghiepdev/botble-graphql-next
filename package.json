@@ -32,7 +32,7 @@
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "9.2.1",
+    "next": "9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-urql": "^0.2.5",
     "prop-types": "^15.7.2",
