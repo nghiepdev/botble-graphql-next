@@ -1,13 +1,11 @@
 # BOTBLE-GRAPHQL-NEXT
 
-[![](https://img.shields.io/docker/pulls/nghiepit/botble-graphql-next?label=botble-graphql-next&style=flat-square)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
-[![](https://images.microbadger.com/badges/version/nghiepit/botble-graphql-next.svg)](https://hub.docker.com/r/nghiepit/botble-graphql-next)
-
-> The migration for Botble from CMS(Laravel) to GraphQL + Next.js
->
+> The migration for Botble from CMS(Laravel) to GraphQL + Next.js  
 > https://graphql-next.toiyeulaptrinh.com
->
-> [![Video demo](screenshot.png)](https://drive.google.com/file/d/10bRf-w4iHHXv9bDW_75g0ZuQNtQdaapw/view?usp=sharing)
+
+<a href="https://youtu.be/BIh1NLuF8gk">
+  <img src="screenshot.png" width="600" alt="Vide demo">
+</a>
 
 ## Prerequisites
 
@@ -19,7 +17,7 @@
 
 _The first you need clone the `.env.example` to `.env` file and overwrite your environments._
 
-_Check the APIs document https://github.com/nghiepit/botble-graphql_
+_Check the APIs document https://github.com/nghiepdev/botble-graphql_
 
 _Only for development environnement_
 
@@ -31,13 +29,13 @@ $ yarn dev
 ## Build Docker image
 
 ```bash
-$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepit/botble-graphql-next:0.0.1 .
+$ docker build --build-arg APP_VERSION=0.0.1 -t nghiepdev/botble-graphql-next:0.0.1 .
 ```
 
 ## Deploy Docker
 
 ```bash
-$ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-next
+$ docker run --restart=unless-stopped -p 3000:3000 -d nghiepdev/botble-graphql-next
 ```
 
 ## Style guides and rules
@@ -62,4 +60,4 @@ $ docker run --restart=unless-stopped -p 3000:3000 -d nghiepit/botble-graphql-ne
 
 ## License
 
-MIT © [Nghiep](https://nghiepit.dev)
+MIT
